@@ -1,0 +1,84 @@
+#logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    z-index: 1;
+}
+
+.colourButton {
+    background-color: rgb(74, 101, 255);
+    color: white;
+}
+
+.banner {
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+}
+
+.banner picture {
+    position: absolute;
+    top: 0;
+}
+
+.banner h1 {
+    z-index: 1;
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4em;
+}
+
+.banner h2 {
+    z-index: 1;
+    position: absolute;
+    top: 360px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+    letter-spacing: 0;
+}
+
+.cardsHolder {
+    position: absolute;
+    top: 750px;
+    left: 0;
+    width: 100%;
+}
+
+.cards {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    color: black;
+    height: 400px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2em;
+    box-shadow: 0 0 10px #a5a5a5;
+    position: relative;
+}
+
+.cardContent {
+    margin: 1em;
+}
+
+.cardContent img {
+    height: 3em;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
