@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
 body {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Kanit', sans-serif;
     margin: 0;
     width: 100%;
     background-color: black;
+    overflow: hidden;
 }
 
 main{
@@ -13,20 +14,16 @@ main{
 
 header {
     width: 100%;
-    text-align: center;
+    text-align: right;
     position: fixed;
-    top: 50px;
-    left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 1;
 }
 
 header nav {
     margin: auto;
-    width: 1000px;
+    width: 100%;
     padding: 1em;
-    border-radius: 2em;
-    box-shadow: 0 0 10px #dadada;
+    box-shadow: 0 0 20px black;
     background-color: rgba(255, 255, 255, 0.965);
 }
 

@@ -1,18 +1,20 @@
 #logo {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px;
+    top: 175px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
     z-index: 1;
 }
 
 .colourButton {
     background-color: rgb(74, 101, 255);
     color: white;
+    margin-right: 3em;
 }
 
 .banner {
-    height: 800px;
+    height: 100%;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -45,40 +47,109 @@
     letter-spacing: 0;
 }
 
-.cardsHolder {
+.carosel {
     position: absolute;
-    top: 750px;
+    top: 300px;
     left: 0;
     width: 100%;
 }
 
-.cards {
-    width: 80%;
+.cardsHolder {
+    height: 35em;
+    width: 100%;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
+    position: relative;
+}
+
+.carosel button {
+    position: absolute;
+    top: 30%;
+    padding: 80px 10px;
+    background-color: inherit;
+    border: 0;
+    transition: 0.1s;
+    font-size: 2em;
+}
+
+.carosel button:hover {
+    background-color: rgba(187, 187, 187, 0.5);
+}
+.carosel button:active {
+    background-color: rgba(105, 105, 105, 0.5);
+}
+
+.carosel button.left {
+    left: 0;
+}
+
+.carosel button.right {
+    right: 0;
 }
 
 .card {
     color: black;
-    height: 400px;
-    width: 300px;
     background-color: rgb(255, 255, 255);
-    text-align: center;
     margin: auto;
-    margin-bottom: 2em;
-    box-shadow: 0 0 10px #a5a5a5;
-    position: relative;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 1.5s;
+    opacity: 0;
+    border-radius: 3em;
+    box-shadow: 0 0 20px black;
 }
 
 .cardContent {
-    margin: 1em;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.cardContent .text {
+    width: 40%;
+    margin-left: 4em;
+    position: relative;
 }
 
-.cardContent img {
-    height: 3em;
+.cardContent .text h2 {
     position: absolute;
-    bottom: 0;
+    top: 25%;
+    font-size: 2em;
+}
+
+.cardContent .text p {
+    position: absolute;
+    top: 40%;
+    font-size: 1.2em;
+}
+
+
+.cardContent img{
+    width: 40%;
+    margin: auto;
+    
+}
+.carosel #dots {
+    color: white;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.854);
+    padding: 0.3em;
+    border-radius: 2em;
+    width: 5em;
+    margin: auto;
+    position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
+    top: 36em;
 }
+
+.carosel .dot {
+    height: 10px;
+    width: 10px;
+    background-color: rgb(187, 187, 187);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 0.5em;
+    transition: 1s;
+    margin: auto;
+  }
+

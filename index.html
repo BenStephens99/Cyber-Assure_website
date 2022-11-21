@@ -25,38 +25,42 @@
         <div class="banner">
             <img id="logo" src="./images/calogo.png">
             <img src="./images/hero.jpg" alt="">
-            <h1>Cyber-Assure</h1>
-            <h2>Technology</h2>
         </div>
 
-        <div class="cardsHolder">
-            <div class="cards">
-
+        <div class="carosel">
+            <div class="cardsHolder">
                 <div class="card">
+
                     <div class="cardContent">
-                        <h2>Outsourced CISO Services</h2>
-                        <p>Cyber-Assure technology executives are experienced in working alongside internal
-                            technology, compliance and audit teams to develop and
-                            lead an information security program to prevent, detect, mitigate, and
-                            recover from cyber related incidents.</p>
+                        <div class="text">
+                            <h2>Outsourced CISO Services</h2>
+                            <p>Cyber-Assure technology executives are experienced in working alongside internal
+                                technology, compliance and audit teams to develop and
+                                lead an information security program to prevent, detect, mitigate, and
+                                recover from cyber related incidents.</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="cardContent">
-                        <h2>Vulnerability Assessments</h2>
-                        <p>Identifying weakness in a system,
-                            application or network that could be subject
-                            to explotation or misuse.</p>
+                        <div class="text">
+                            <h2>Vulnerability Assessments</h2>
+                            <p>Identifying weakness in a system,
+                                application or network that could be subject
+                                to explotation or misuse.</p>
+                        </div>
                         <img src="./images/assessmentIcon.svg" alt="Assessment Icon">
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="cardContent">
-                        <h2>Cloud Architecture Security</h2>
-                        <p>Best practices design review including network access, network conficuration,
-                            network segmentation, protection, monitoring and event management.</p>
+                        <div class="text">
+                            <h2>Cloud Architecture Security</h2>
+                            <p>Best practices design review including network access, network conficuration,
+                                network segmentation, protection, monitoring and event management.</p>
+                        </div>
                         <img src="./images/cloudIcon.svg" alt="Assessment Icon">
 
                     </div>
@@ -64,18 +68,22 @@
 
                 <div class="card">
                     <div class="cardContent">
-                        <h2>Incident Response</h2>
-                        <p>Define a Cybersecurity Incident Response Plan </p>
+                        <div class="text">
+                            <h2>Incident Response</h2>
+                            <p>Define a Cybersecurity Incident Response Plan </p>
+                        </div>
                         <img src="./images/planIcon.svg">
                     </div>
                 </div>
+                <button onclick="changeCard(-1)" class="left">&#10094</button>
+                <button onclick="changeCard(1)" class="right">&#10095</button>
+                <div id="dots">
 
+                </div>
             </div>
         </div>
-        </div>
-
     </main>
-
+    <script src="./js/javascript.js"></script>
 </body>
 
 
