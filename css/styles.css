@@ -1,13 +1,21 @@
-#logo {
+#logoFingerprint, #logoText {
     position: absolute;
-    top: 175px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 250px;
+    top: 5px;
     z-index: 1;
 }
 
-.colourButton {
+#logoFingerprint {
+    left: 10px;
+    width: 75px;
+}
+
+#logoText {
+    left: 95px;
+    width: 150px;
+    top: 25px
+}
+
+.contactButton {
     background-color: rgb(74, 101, 255);
     color: white;
     margin-right: 3em;
@@ -49,21 +57,23 @@
 
 .carosel {
     position: absolute;
-    top: 300px;
+    top: 200px;
     left: 0;
     width: 100%;
 }
 
 .cardsHolder {
-    height: 35em;
+    height: 40em;
     width: 100%;
+    max-width: 1200px;
     margin: auto;
     position: relative;
 }
 
-.carosel button {
+.carosel .left, .right {
+    z-index: 1;
     position: absolute;
-    top: 30%;
+    top: 35%;
     padding: 80px 10px;
     background-color: inherit;
     border: 0;
@@ -104,6 +114,7 @@
     height: 100%;
     display: flex;
 }
+
 .cardContent .text {
     width: 40%;
     margin-left: 4em;
@@ -122,16 +133,30 @@
     font-size: 1.2em;
 }
 
+.cardContent .text button {
+    position: absolute;
+    top: 75%;
+    padding: 1em 2em;
+    background-color: inherit;
+    letter-spacing: 2px;
+    font-size: 0.9em;
+}
+
+
+.cardContent .text button:hover {
+    background-color: rgb(74, 101, 255);
+    color: white;
+    cursor: pointer;
+}
 
 .cardContent img{
-    width: 40%;
+    width: 20%;
     margin: auto;
     
 }
 .carosel #dots {
     color: white;
     display: flex;
-    background-color: rgba(255, 255, 255, 0.854);
     padding: 0.3em;
     border-radius: 2em;
     width: 5em;
@@ -139,7 +164,8 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: 36em;
+    top: 39em;
+    z-index: 1;
 }
 
 .carosel .dot {
