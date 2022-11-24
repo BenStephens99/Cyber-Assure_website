@@ -1,0 +1,110 @@
+#logoFingerprint,
+#logoText {
+    position: absolute;
+    top: 5px;
+    z-index: 1;
+}
+
+#navButton {
+    display: none;
+}
+
+#logoFingerprint {
+    left: 10px;
+    width: 75px;
+}
+
+#logoText {
+    left: 95px;
+    width: 150px;
+    top: 25px
+}
+
+.contactButton {
+    background-color: #004AAD;
+    color: white
+}
+
+.contactButton a::after {
+    height: 0;
+    width: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.banner {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+}
+
+.banner h1 {
+    z-index: 1;
+    position: absolute;
+    top: 220px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4em;
+}
+
+.banner h2 {
+    z-index: 1;
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+    letter-spacing: 0;
+}
+
+
+.cardsHolder {
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%;
+    margin: 2em auto; 
+}
+
+.card {
+    margin:1.66%;
+    background-color: white;
+    width: 30%;
+    margin-bottom: 2em;
+    border-radius: 2em;
+    height: 460px;
+}
+
+.card h2 {
+    color: #004AAD;
+}
+
+.cardContent {
+    position: relative;
+    height: 100%;
+    margin: auto;
+    width: 90%;
+}
+
+.card .imgHolder { 
+    position: absolute;
+    top: 210px;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    max-width: 100%;
+}
+
+.imgHolder img {
+    height: 100%;
+}
+
+.cardContent nav {
+    position: absolute;
+    bottom: 50px;
+}

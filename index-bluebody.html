@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cyber-Assure Technology</title>
+    <link rel="stylesheet" href="css-bluebody-carosel/stylesheet.css">
+    <link rel="stylesheet" href="css-bluebody-carosel/styles.css">
+
+</head>
+
+
+<body>
+    <header>
+        <img id="navButton" onclick="openMenu()" src="./images/mobileMenu.svg">
+        <nav id="siteNav">
+            <li><a href="index.html">Vulnerability Assessments</a></li>
+            <li><a href="index.html">Outsourced CISO Services</a></li>
+            <li><a href="index.html">Penetration Testing</a></li>
+            <li class="contactButton"><a href="index.html">Contact</a></li>
+        </nav>
+        <img id="logoFingerprint" src="./images/logos/cyber-ASSURE fingerprint blue.png">
+        <img id="logoText" src="./images/logos/cyber-ASSURE text blue.png">
+    </header>
+
+    <main>
+
+        <div class="banner">
+        </div>
+
+        <div class="carosel">
+            <div class="cardsHolder">
+                <div class="card">
+
+                    <div class="cardContent">
+                        <div class="text">
+                            <h2>Outsourced CISO Services</h2>
+                            <p>Cyber-Assure technology executives are experienced in working alongside internal
+                                technology, compliance and audit teams to develop and
+                                lead an information security program to prevent, detect, mitigate, and
+                                recover from cyber related incidents.</p>
+                            <nav><a href="./index.html">Take a look</a></nav>
+                        </div>
+                        <img src="./images/OutsourceCISO.jpg">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardContent">
+                        <div class="text">
+                            <h2>Vulnerability Assessments</h2>
+                            <p>Gain a perspective on potential weakness in a system, application or network that could be subject 
+                                to explotation or misuse. We'll use the findings to develop a roadmap for remidiating those that 
+                                pose an unacceptable risk to your business. </p>
+                            <nav><a href="./index.html">Take a look</a></nav>
+                        </div>
+                        <img src="./images/VunrabilityAssessments.jpg" alt="Assessment Icon">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardContent">
+                        <div class="text">
+                            <h2>Cloud Architecture Security</h2>
+                            <p>Best practices design review including network access, network conficuration,
+                                network segmentation, protection, monitoring and event management.</p>
+                            <nav><a href="./index.html">Take a look</a></nav>
+                        </div>
+                        <img src="./images/CloudSecurity.jpg" alt="Assessment Icon">
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardContent">
+                        <div class="text">
+                            <h2>Incident Response</h2>
+                            <p>Define a Cybersecurity Incident Response Plan that aligns with existing 
+                                disaster reover and business contiunity plans.</p>
+                            <nav><a href="./index.html">Take a look</a></nav>
+                        </div>
+                        <img src="./images/IncidentResponse.jpg">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardContent">
+                        <div class="text">
+                            <h2>Third-Party assessments</h2>
+                            <p>Ensure that all vendors or links in your supply chain are reliable, 
+                                reputable orgnisations that disclose their security practices to their business partners.</p>
+                            <nav><a href="./index.html">Take a look</a></nav>
+                        </div>
+                        <img src="./images/ThirdParty.jpg">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="cardContent">
+                        <div class="text">
+                            <h2>Security Awareness training</h2>
+                            <p>All users of IT are the first line of defence in ensuring a secure enterprise. 
+                                Cyber-Assure can help develop and implement ongoing security awareness training and 
+                                education to protect against common threats such as phishing and ransomware attacks.</p>
+                            <nav><a href="./index.html">Take a look</a></nav>
+                        </div>
+                        <img src="./images/SecurityAwareness.jpg">
+                    </div>
+                </div>
+                <button onclick="changeCard(-1)" class="left">&#10094</button>
+                <button onclick="changeCard(1)" class="right">&#10095</button>
+                <div id="dots">
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/javascript.js"></script>
+</body>
+
+
+</html>
