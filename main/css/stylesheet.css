@@ -3,6 +3,7 @@
 html{
     height: 100vh;
     margin: 0;
+    overflow-x: hidden;
 }
 
 body {
@@ -14,14 +15,15 @@ body {
 }
 
 main{
-    width: 100%;
+    width: 100%;   
 }
 
 header {
     width: 100%;
     text-align: right;
     position: fixed;
-    z-index: 1;
+    top: 0;
+    z-index: 2;
     background-color: white;
     color: #004AAD;
 }
@@ -61,11 +63,12 @@ nav a:after {
     width: 100%
 }
 
-main {
-    position: relative;
-    top: 70px;
-}
 
-img{
-    max-width: 100%;
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #004AAD;
+    padding: 20px;
+    color: white;
+    text-align: center;
 }

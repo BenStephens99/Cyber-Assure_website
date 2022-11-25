@@ -21,8 +21,15 @@
 }
 
 .contactButton {
+    background-color: white;
+    color: #004AAD;
+    border: 2px solid #004AAD;
+}
+
+.contactButton:hover {
     background-color: #004AAD;
-    color: white
+    color: white;
+    cursor: pointer;
 }
 
 .contactButton a::after {
@@ -36,9 +43,13 @@
     height: 600px;
     width: 100%;
     overflow: hidden;
-    position: relative;
-    top: 0;
+    top: 50px;
 }
+
+.banner img {
+    width: 100%;    
+}
+
 
 .banner h1 {
     z-index: 1;
@@ -58,54 +69,108 @@
     transform: translate(-50%, -50%);
     color: white;
     font-size: 2em;
-    letter-spacing: 0;
+    letter-spacing: 6px;
+}
+
+.qualifications {
+    width: 50%;
+    max-width: 700px;
+    height: 150px;
+    border-radius: 1em;
+    box-shadow: 0 0 5px rgb(55, 55, 55);
+    position: absolute;
+    top: 525px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    background-color: white;
+    text-align: center;
+    z-index: 1;
+    border-bottom: #004AAD 10px solid;
+}
+
+.qual {
+    width: 33%;
+    margin: auto;
+}
+
+.qual img {
+    width: 50px;
 }
 
 
+.borderLine {
+    border-right: 1px solid rgb(199, 199, 199);
+    height: 50%;
+    margin: auto;
+}
+
 .cardsHolder {
-    display: flex;
-    flex-wrap: wrap;
-    width: 65%;
-    margin: 2em auto; 
+    position: relative;
+    width: 70%;
+    min-width: 800px;
+    margin: auto;
+    padding-top: 3em;
 }
 
 .card {
-    background-color: white;
-    width: 100%;
-    margin-bottom: 2em;
-    border-radius: 2em;
-    position: relative;
-}
-
-.card h2 {
-    color: #004AAD;
-    text-align: center;
+    height: 400px;
+    overflow: hidden;
+    margin: 5em;
+    padding: 0 20px
 }
 
 .cardContent {
     position: relative;
+    width: 100%;
     height: 100%;
-    margin: auto;
-    width: 90%;
 }
 
-.card .imgHolder { 
+.cardContent .textLeft, .cardsHolder .textRight {
     position: absolute;
-    top: 0;
-    width: 300px;
-    height: 200px;
+    background-color: white;
+    z-index: 1;
+    width: 60%;
+    margin: 75px 0;
+    height: 250px;
+    box-shadow: 0 0 20px rgb(98, 98, 98);
+}
+
+.cardsHolder .textLeft{
+    left: 0;
+}
+
+.cardsHolder .textRight{
+    right: 0;
+}
+
+.cardContent h2, .cardContent p {
+    margin: 30px;
+    padding: 0;
+}
+
+.cardContent h2 {
+    color: #004AAD;
+}
+.cardContent .imgHolderRight, .cardsHolder .imgHolderLeft {
+    position: absolute;
     overflow: hidden;
-    left: 50%;
-    transform: translate(-50%, 10%);
-    max-width: 100%;
-}
-
-.imgHolder img {
+    top: 0;
+    width: 60%;
     height: 100%;
-    max
+    border-radius: 2em;
 }
 
-.cardContent nav {
-    position: absolute;
-    bottom: 50px;
+.cardsHolder .imgHolderLeft {
+    left: 0;
 }
+
+.cardContent .imgHolderRight {
+    right: 0;
+}
+
+.imgHolderRight img, .imgHolderLeft img {
+    height: 100%;
+    border-radius: 2em;
+}
+
