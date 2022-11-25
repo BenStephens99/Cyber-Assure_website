@@ -15,7 +15,7 @@
 }
 
 #logoText {
-    left: 95px;
+    left: 85px;
     width: 150px;
     top: 25px
 }
@@ -70,16 +70,16 @@
 }
 
 .card {
-    margin:1.66%;
     background-color: white;
-    width: 30%;
+    width: 100%;
     margin-bottom: 2em;
     border-radius: 2em;
-    height: 460px;
+    position: relative;
 }
 
 .card h2 {
     color: #004AAD;
+    text-align: center;
 }
 
 .cardContent {
@@ -91,7 +91,7 @@
 
 .card .imgHolder { 
     position: absolute;
-    top: 210px;
+    top: 0;
     width: 300px;
     height: 200px;
     overflow: hidden;
@@ -102,6 +102,7 @@
 
 .imgHolder img {
     height: 100%;
+    max
 }
 
 .cardContent nav {
