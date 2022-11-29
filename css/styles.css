@@ -41,7 +41,7 @@
 }
 
 .banner {
-    height: 600px;
+    height: 500px;
     width: 100%;
     overflow: hidden;
     top: 50px;
@@ -56,7 +56,7 @@
 .banner h1 {
     z-index: 1;
     position: absolute;
-    top: 240px;
+    top: 210px;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -68,7 +68,7 @@
 .banner h2 {
     z-index: 1;
     position: absolute;
-    top: 300px;
+    top: 265px;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -78,12 +78,24 @@
     width: 100%;
 }
 
+.banner p {
+    z-index: 1;
+    position: absolute;
+    top: 380px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+}
+
 .qualifications {
     width: 700px;
     border-radius: 1em;
     box-shadow: 0 0 5px rgb(55, 55, 55);
     position: absolute;
-    top: 525px;
+    top: 425px;
     left: 50%;
     transform: translate(-50%);
     display: flex;
@@ -121,7 +133,7 @@
     height: 400px;
     overflow: hidden;
     margin: 5em;
-    padding: 0 20px
+    padding: 10px;
 }
 
 .cardContent {
@@ -162,10 +174,12 @@
 .cardContent .imgHolderRight,
 .cardsHolder .imgHolderLeft {
     position: absolute;
-    overflow: hidden;
     top: 0;
     width: 60%;
     height: 100%;
+    overflow: hidden;
+    border-radius: 2em;
+
 }
 
 .cardsHolder .imgHolderLeft {
@@ -179,6 +193,12 @@
 .imgHolderRight img,
 .imgHolderLeft img {
     height: 100%;
+    border-radius: 2em;
+}
+
+.imgHolderRight img {
+    right: 0;
+    float: right;
 }
 
 footer {
@@ -264,7 +284,6 @@ footer {
 
     .card {
         margin: 0;
-        height: 500px;
         width: 100%;
         padding: 1.5em 0;
         height: auto;
@@ -274,12 +293,23 @@ footer {
         width: 90%;
         margin: auto;
         box-shadow: 0 0 15px rgb(239, 239, 239);
+        text-align: center;
+        border-radius: 2em;
     }
 
     .cardContent h2,
     .cardContent p {
         padding: 20px;
         margin: 0;
+    }
+
+    .cardContent h2 {
+        font-size: 1.7em;
+        padding-bottom: 10px;
+    }
+
+    .cardContent p {
+        font-size: 1.2em;
     }
 
     .cardContent .textLeft,
@@ -298,6 +328,8 @@ footer {
         margin: auto;
         height: 400px;
         bottom: 0;
+        border-radius: 2em;
+        margin-top: 10px;
     }
 
     .imgHolderRight img,
@@ -305,8 +337,9 @@ footer {
         width: 100%;
         height: auto;
         position: absolute;
-        bottom: 0;
+        top: 0;
         left: 0;
+        border-radius: 2em;
     }
 }
 
@@ -315,6 +348,6 @@ footer {
 
     .cardContent .imgHolderRight,
     .cardsHolder .imgHolderLeft {
-        height: 200px;
+        height: 190px;
     }
 }
