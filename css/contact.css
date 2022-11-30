@@ -18,7 +18,7 @@ footer {
     border-bottom: #004AAD 10px solid;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
     #contact {
         top: 330px;
         width: 70%;
