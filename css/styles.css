@@ -94,7 +94,7 @@
     border-radius: 1em;
     box-shadow: 0 0 5px rgb(55, 55, 55);
     position: absolute;
-    top: 425px;
+    top: 450px;
     left: 50%;
     transform: translate(-50%);
     display: flex;
@@ -102,16 +102,24 @@
     text-align: center;
     z-index: 1;
     border-bottom: #004AAD 10px solid;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #004AAD;
 }
 
 .qual {
     width: 33%;
     margin: auto;
-    padding: 2em 0;
+    padding: 1.5em 0;
+    position: relative;
 }
 
 .qual img {
-    width: 50px;
+    width: 40px;
+}
+
+.qual p {
+    margin: 5px;
 }
 
 .borderLine {
@@ -119,8 +127,6 @@
     height: 5em;
     margin: auto;
 }
-
-
 
 .card {
     height: 400px;
@@ -138,7 +144,7 @@
 }
 
 .cardContent .textLeft,
-.cardsHolder .textRight {
+.cardContent .textRight {
     position: absolute;
     background-color: white;
     z-index: 1;
@@ -149,11 +155,11 @@
     border-radius: 2em;
 }
 
-.cardsHolder .textLeft {
+.cardContent .textLeft {
     left: 0;
 }
 
-.cardsHolder .textRight {
+.cardContent .textRight {
     right: 0;
 }
 
@@ -168,7 +174,7 @@
 }
 
 .cardContent .imgHolderRight,
-.cardsHolder .imgHolderLeft {
+.cardContent .imgHolderLeft {
     position: absolute;
     top: 0;
     width: 60%;
@@ -179,7 +185,7 @@
 
 }
 
-.cardsHolder .imgHolderLeft {
+.cardContent .imgHolderLeft {
     left: 0;
 }
 
@@ -318,7 +324,7 @@ footer {
     }
 
     .cardContent .textLeft,
-    .cardsHolder .textRight {
+    .cardContent .textRight {
         position: relative;
         width: 100%;
         margin: 0;
@@ -327,7 +333,7 @@ footer {
     }
 
     .cardContent .imgHolderRight,
-    .cardsHolder .imgHolderLeft {
+    .cardContent .imgHolderLeft {
         position: relative;
         width: 100%;
         margin: auto;
@@ -352,7 +358,7 @@ footer {
 @media screen and (max-width: 800px) {
 
     .cardContent .imgHolderRight,
-    .cardsHolder .imgHolderLeft {
+    .cardContent .imgHolderLeft {
         height: 200px;
     }
 
